@@ -1,13 +1,91 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>math-anim</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathGIF - 测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 12px 0;
+        }
+        .feature-icon {
+            font-size: 1.5em;
+        }
+        .status {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #10b981;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MathGIF</h1>
+    <p class="subtitle">数学动图生成网站</p>
+    
+    <div class="card">
+        <h2>🎯 核心功能</h2>
+        <div class="feature">
+            <span class="feature-icon">📊</span>
+            <span>函数动画生成（sin/cos/exp/多项式）</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">🤖</span>
+            <span>AI 自然语言生成</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">📝</span>
+            <span>题目解析 → 动图</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">👨‍🏫</span>
+            <span>AI 专家咨询</span>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">📹</span>
+            <span>MP4 录制导出</span>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>✅ 部署状态</h2>
+        <p>GitHub Pages 部署测试</p>
+        <span class="status">运行正常</span>
+    </div>
+    
+    <div class="card">
+        <h2>🚀 即将上线</h2>
+        <p>完整版本正在开发中，敬请期待...</p>
+    </div>
+</body>
 </html>
